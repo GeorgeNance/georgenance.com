@@ -1,17 +1,19 @@
 <template>
-  <div class="py-12 full-width-container bg-gray-100 dark:bg-gray-900 inset-shadow-sm inset-shadow-secondary-500">
+  <div class="md:py-12 full-width-container bg-gray-100 dark:bg-gray-900 inset-shadow-sm ">
     <div class="max-w-3xl mx-auto ">
       <div
            class="rounded-lg overflow-hidden shadow-sm border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
         <div class="p-6 md:p-8">
           <!-- Header -->
           <div class="text-center mb-6">
-            <h2 class="text-2xl font-bold mb-2 text-gray-800 dark:text-white font-h1">
-              Stay Updated
-            </h2>
-            <p class="text-gray-600 dark:text-gray-400">
-              Get the latest articles and resources delivered straight to your inbox.
-            </p>
+            <slot>
+              <h2 class="text-2xl font-bold mb-2 text-gray-800 dark:text-white font-h1">
+                Stay Updated
+              </h2>
+              <p class="text-gray-600 dark:text-gray-400">
+                Get the latest articles and resources delivered straight to your inbox.
+              </p>
+            </slot>
           </div>
 
           <!-- Form -->
@@ -40,7 +42,7 @@
 
               <!-- Submit Button -->
               <button data-element="submit"
-                      class="formkit-submit w-full py-3 px-6 rounded-lg font-medium text-white bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 relative group">
+                      class="formkit-submit cursor-pointer w-full py-3 px-6 rounded-lg font-medium text-white bg-gray-800 hover:bg-primary-100 bg-primary-500  transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 relative group">
                 <div
                      class="formkit-spinner inline-flex items-center mr-2 opacity-0 transition-opacity duration-300 group-data-[active]:opacity-100">
                   <div class="w-2 h-2 mx-0.5 bg-current rounded-full animate-pulse"></div>
@@ -69,6 +71,8 @@ onMounted(() => {
   script.async = true;
   document.head.appendChild(script);
 });
+
+
 </script>
 
 <style>

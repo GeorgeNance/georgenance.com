@@ -74,6 +74,10 @@ I'm always open to discussing ideas, collaborating on projects, or just geeking 
 
 
 ::subscribe
+## Want to stay up to date?
+
+Consider subscribing! I won't spam you inbox and will only send you updates when I make a new post
+::
 
 
 
