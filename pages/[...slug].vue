@@ -11,8 +11,8 @@
 									class="text-4xl sm:text-5xl dark:text-white font-h1 font-bold mb-4 mt-0 leading-tight">
 									{{ page.title }}
 								</h1>
-								<div v-if="page.date" class="text-gray-600 dark:text-gray-400 text-base">
-									Last updated: {{ getReadableDate(page.date) }}
+								<div v-if="page.updated_at" class="text-gray-600 dark:text-gray-400 text-base">
+									Last updated: {{ getReadableDate(page.updated_at) }}
 								</div>
 							</header>
 						</article>

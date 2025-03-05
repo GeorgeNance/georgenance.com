@@ -1,6 +1,6 @@
 ---
 title: 'Right now, I am'
-date: 2024-02-01
+updated_at: 2024-03-04
 slug: now
 description: What I am currently doing
 published: true
@@ -13,8 +13,6 @@ published: true
 
 
 ---
-Last updated: Feb 26th, 2025
-
 
 
 [What's a Now Page?](https://nownownow.com/about)

@@ -37,7 +37,8 @@ export default {
 				title: z.string(),
 				description: z.string(),
 				slug: z.string(),
-				date: z.date().optional()
+				date: z.date().optional(),
+				updated_at: z.date().optional(),
 
 			}),
 
