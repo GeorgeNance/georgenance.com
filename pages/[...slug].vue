@@ -7,7 +7,7 @@
 						<article>
 							<!-- Page header with title and date -->
 							<header>
-								<h1>
+								<h1 class="text-3xl font-bold">
 									{{ page.title }}
 								</h1>
 								<div v-if="page.updated_at">
@@ -18,8 +18,8 @@
 					</div>
 
 					<!-- Page content -->
-					<div>
-						<ContentRenderer :value="page" />
+					<div class="mt-4">
+						<ContentRenderer :value="page" class="prose " />
 					</div>
 				</div>
 			</div>

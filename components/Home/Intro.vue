@@ -1,12 +1,11 @@
 <template>
   <div>
-    <NuxtImg ref="avatar" src="/img/profile.jpg" alt="George Nance" draggable="false"
-             sizes="(min-width: 768px) 192px, 128px" placeholder format="webp" />
+    <NuxtImg ref="avatar" src="/img/profile.jpg" alt="George Nance" draggable="false" placeholder format="webp" />
 
-    <h1>
+    <h1 class="text-4xl font-bold">
       Welcome!👋
     </h1>
-    <p ref="description">
+    <p class="text-gray-500 mt-2" ref="description">
       I'm <NuxtLink to="/about">George Nance</NuxtLink>, I'm a full stack developer
       based in Phoenix,
       AZ.

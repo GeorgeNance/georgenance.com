@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Design Standards
+
+## Color Theme
+
+This project uses a single light color theme and does not support dark mode.
+
+### Guidelines:
+
+1. **No Dark Mode Classes**
+   - Do not use `dark:` prefixed Tailwind classes
+   - Remove any `@media (prefers-color-scheme: dark)` CSS rules
+   - Avoid color switching logic based on dark/light mode
+
+2. **Standard Color Palette**
+   - Light backgrounds: `bg-white`, `bg-gray-50`, `bg-gray-100`
+   - Text: `text-gray-700` (body), `text-gray-900` (headings), `text-gray-500` (secondary)
+   - Accents: Use consistent accent colors throughout components
+
+3. **Component Examples**
+   - Blockquotes: See [ProseBlockquote.vue](mdc:components/content/ProseBlockquote.vue) for implementation
+   - Use consistent styling across all content components
+
+When styling or creating new components, ensure they follow this single light theme approach for visual consistency across the site.

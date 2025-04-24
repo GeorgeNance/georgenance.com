@@ -1,9 +1,9 @@
 <template>
 
-  <nav class="flex flex-col fixed h-full justify-center">
+  <nav class="flex flex-col lg:fixed lg:h-full justify-center items-center py-4 lg:py-0">
     <div>
       <!-- logo -->
-      <div>
+      <div class="flex justify-center lg:justify-start">
         <NuxtLink href="/">
           <span>George Nance</span>
         </NuxtLink>
@@ -16,8 +16,8 @@
           </svg>
         </button>
       </div>
-      <!-- Desktop nav -->
-      <div class="flex flex-col gap-4">
+
+      <div class="flex lg:flex-col gap-4">
         <NuxtLink class=" border-2  ring-2 ring-gray-200 rounded-md -rotate-5 px-2 py-2" :to="item.link"
                   v-for="(item, index) in menuItems" :key="`desktop-${index}`">
           {{ item.label }}
