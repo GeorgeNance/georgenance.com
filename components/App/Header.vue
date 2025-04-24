@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 font-serif">
+    <h1 class="text-4xl font-bold">
       {{ title }}
     </h1>
-    <p class="mt-4 text-base text-gray-600 dark:text-gray-400 font-serif">
+    <p class="text-gray-500 mt-2">
       {{ description }}
     </p>
     <!-- A glowy line -->
-    <div class="mt-6 h-1 w-full bg-linear-to-r from-zinc-600 to-zinc-400 rounded-full"></div>
+    <div class="w-full h-1 bg-gray-500/20 mt-4 rounded-full"></div>
   </div>
 </template>
 

@@ -43,23 +43,21 @@ const copyCode = (): void => {
 </script>
 
 <template>
-	<div class="relative rounded-lg bg-[var(--shiki-default-bg)] shadow-lg ">
-		<div class="flex justify-end items-center py-1 px-2 pl-3 absolute top-0 right-0">
-			<div v-if="props.filename"
-				 class="ml-0 mr-auto font-mono text-sm text-[var(--shiki-default)] opacity-50 truncate">
+	<div>
+		<div>
+			<div v-if="props.filename">
 				<i>{{ filename }}</i>
 			</div>
-			<span v-if="codeCopied" class="px-3 rounded-sm text-green-300 font-[sans-serif] text-sm opacity-50">
+			<span v-if="codeCopied">
 				<i>Copied</i>
 			</span>
-			<button class="px-3  rounded-sm border font-[sans-serif] text-sm text-[var(--shiki-default)] opacity-25 hover:opacity-50 bg-inherit border-[var(--shiki-default)] hover:text-white hover:border-white whitespace-nowrap transition-all duration-300"
-					@click="copyCode">
+			<button @click="copyCode">
 				Copy
 			</button>
 		</div>
-		<div class="max-w-[calc(100vw-4rem)]">
-			<pre :class="['m-0  overflow-x-auto px-6', $props.class]">
-				<div class=""><slot/></div></pre>
+		<div>
+			<pre class="code-block">
+				<div class="code-content"><slot/></div></pre>
 		</div>
 	</div>
 </template>

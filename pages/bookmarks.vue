@@ -1,16 +1,15 @@
 <template>
-  <main class="min-h-screen">
-    <AppHeader class="mb-8" title="Bookmarks" :description="description" />
-    <ul class="space-y-2">
+  <main>
+    <AppHeader title="Bookmarks" :description="description" />
+    <ul>
       <li v-for="bookmark in bookmarks" :key="bookmark.id">
-        <a :href="bookmark.url" target="_blank"
-           class="flex items-center gap-3 hover:bg-gray-100 dark:hover:bg-white/10 p-2 rounded-lg -m-2 text-sm min-w-0">
+        <a :href="bookmark.url" target="_blank">
 
-          <p class="truncate text-gray-700 dark:text-gray-200">
+          <p>
             {{ bookmark.label }}
           </p>
-          <span class="flex-1"></span>
-          <span class="text-xs font-medium text-gray-400 dark:text-gray-600">
+          <span></span>
+          <span>
             {{ getHost(bookmark.url) }}
           </span>
         </a>

@@ -25,14 +25,14 @@
 } */
 
 
-@theme{
+@theme {
   /* Darker to lighter */
   --color-primary: #E6A817;
   --color-primary-500: #E6A817;
   --color-primary-100: #B7830E;
 
   --color-secondary: #2ABEB5;
-  --color-secondary-500: #1A8F88 ;
+  --color-secondary-500: #1A8F88;
   --color-secondary-100: #2ABEB5;
 
 
@@ -54,7 +54,7 @@
 
 
 body {
-	font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
 }
 
 
@@ -62,5 +62,3 @@ body {
 .prose h3 a {
   @apply no-underline;
 }
-
-

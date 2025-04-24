@@ -1,6 +1,7 @@
 ---
 description: Published Field Queries
-globs: **/*.{vue,ts}
+globs: **/*.vue
+alwaysApply: false
 ---
 name: Published Field Queries
 description: Rules for querying published articles in Nuxt Content v3

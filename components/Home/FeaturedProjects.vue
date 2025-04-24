@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold dark:text-gray-300 text-gray-500 mb-6">
+    <h2>
       FEATURED PROJECTS
     </h2>
-    <div class="space-y-4 grid-cols-2">
+    <div>
       <AppProjectCard v-for="(project, id) in projects" :key="id" :project="project" />
     </div>
-    <div class="flex items-center justify-center mt-6 text-sm">
+    <div>
       <NuxtLink label="All Projects &rarr;" to="/projects" variant="link" color="gray" />
     </div>
   </div>

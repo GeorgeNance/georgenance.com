@@ -1,7 +1,7 @@
 <template>
-	<main class="min-h-screen">
-		<AppHeader class="mb-16" :title="`${title} articles`" :description="description" />
-		<ul class="space-y-4">
+	<main>
+		<AppHeader :title="`${title} articles`" :description="description" />
+		<ul>
 			<li v-for="(article, id) in articles" :key="id">
 				<AppArticleCard :article="article" :delay-animation="id * 100" />
 			</li>

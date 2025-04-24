@@ -1,14 +1,13 @@
 <template>
-	<main class="min-h-screen">
-		<AppHeader class="mb-12" title="Tags" :description="description" />
-		<div class="space-y-4">
+	<main>
+		<AppHeader title="Tags" :description="description" />
+		<div>
 			<ul v-for="(tag, tagCount) in tagCount">
 				<li>
-					<NuxtLink :to="`/tags/${tag.tag}`"
-							  class="text-2xl font-bold text-gray-900 dark:text-gray-100 hover:text-cyan-500">
+					<NuxtLink :to="`/tags/${tag.tag}`">
 						{{ tag.tag }}
 					</NuxtLink>
-					<span class=" ml-2 text-gray-500 dark:text-gray-400">({{ tag.count }})</span>
+					<span>({{ tag.count }})</span>
 				</li>
 
 			</ul>

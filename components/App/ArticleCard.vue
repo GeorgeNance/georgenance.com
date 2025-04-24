@@ -1,34 +1,18 @@
 <template>
-  <NuxtLink :to="`/articles/${article.slug}`" class="group">
-    <article v-motion :initial="{
-      opacity: 0,
-      y: -10,
-      scale: 1,
-    }" :enter="{
-      opacity: 1,
-      y: 0,
-      scale: 1,
-    }" :delay="delayAnimation"
-             class="hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-4 transition-colors duration-300 ease-in-out">
-      <div class="flex items-center gap-2">
-        <h2
-            class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-primary-600">
-          {{ article.title }}
+  <NuxtLink :to="`/articles/${article.slug}`" class="py-4 ">
+    <article>
+      <div>
+        <h2 class="text-xl font-bold">
+          {{ article.title }} <span class="text-gray-500 font-normal text-sm" v-if="article.meta.readingTime">
+            {{ article.meta.readingTime.text }}
+          </span>
         </h2>
-        <span v-if="showUnpublishedBadge"
-              class="px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full">
+        <span v-if="showUnpublishedBadge" class="text-white bg-red-500/50 rounded-md px-2 py-2 font-normal text-sm">
           Unpublished
         </span>
       </div>
 
-      <!-- Read Time -->
-      <p class="relative z-10 text-sm text-gray-600 dark:text-gray-400">
-        <span class="relative z-10 text-sm text-gray-600 dark:text-gray-400" v-if="article.meta.readingTime">
-          {{ article.meta.readingTime.text }}
-        </span>
-        <span class="px-2">❖</span>
-        {{ article.description }}
-      </p>
+
     </article>
   </NuxtLink>
 </template>

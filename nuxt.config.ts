@@ -61,7 +61,7 @@ export default defineNuxtConfig({
       },
 
       bodyAttrs: {
-        class: "antialiased text-slate-500 dark:text-slate-400 min-h-screen h-full dark:bg-slate-900 bg-white ",
+        class: "antialiased min-h-screen h-full",
       },
     },
   },

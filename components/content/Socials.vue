@@ -1,22 +1,15 @@
 <template>
-  <div
-       class="my-8 p-6 rounded-2xl bg-gray-50/30 dark:bg-gray-800/50 transition-all duration-300 shadow-xs border border-gray-100/50 dark:border-white/5">
-    <h2 v-if="showTitle"
-        class="text-base font-bold uppercase tracking-wider text-gray-700 dark:text-gray-200 mb-6 text-center relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-0.5 after:bg-indigo-500 dark:after:bg-indigo-400 after:rounded-full">
+  <div>
+    <h2 v-if="showTitle">
       {{ title }}
     </h2>
-    <div class="grid grid-cols-2 md:grid-cols-2 gap-5"
-         :class="layout === 'row' ? 'md:flex md:flex-wrap md:justify-center' : ''">
+    <div class="socials-container">
       <NuxtLink v-for="(link, index) in socialLinks" :key="link.icon" :to="link.url" target="_blank" external
-                class="flex flex-col items-center p-4 rounded-xl bg-white/70 dark:bg-gray-700/70 backdrop-blur-xs border border-gray-100/30 dark:border-white/5 text-gray-700 dark:text-gray-200 transition-all duration-300 hover:bg-white dark:hover:bg-gray-700 hover:shadow-md hover:-translate-y-1 group"
-                :class="layout === 'row' ? 'md:min-w-[120px]' : ''" :aria-label="`Visit ${link.name}`">
-        <div v-motion :initial="{ opacity: 0, y: 10 }" :enter="{ opacity: 1, y: 0, scale: 1 }"
-             :hovered="{ scale: 1.05 }" :delay="100 * index" class="flex flex-col items-center gap-3 w-full"
-             :class="layout === 'row' ? 'md:flex-row md:justify-center' : ''">
-          <Icon :name="link.icon"
-                class="w-8 h-8 text-gray-500 dark:text-gray-400 transition-transform duration-300 group-hover:scale-110">
+                :aria-label="`Visit ${link.name}`">
+        <div class="social-icon">
+          <Icon :name="link.icon">
           </Icon>
-          <span v-if="showLabels" class="text-sm font-semibold text-center">{{ link.name }}</span>
+          <span v-if="showLabels">{{ link.name }}</span>
         </div>
       </NuxtLink>
     </div>

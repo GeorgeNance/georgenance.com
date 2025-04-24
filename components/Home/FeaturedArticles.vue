@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold dark:text-gray-300 text-gray-500 mb-6">
+    <h2>
       RECENT ARTICLES
     </h2>
-    <ul class="space-y-8">
+    <ul>
       <li v-for="(article, id) in articles" :key="id">
         <AppArticleCard :article="article" />
       </li>
     </ul>
-    <div class="flex items-center justify-center mt-6 text-sm">
+    <div>
       <NuxtLink label="All Articles &rarr;" to="/articles" variant="link" color="gray" />
     </div>
   </div>

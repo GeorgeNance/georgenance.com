@@ -1,26 +1,24 @@
 <template>
-	<figure class="not-prose my-10">
-		<blockquote
-					class="relative p-8 bg-gray-50/70 dark:bg-gray-800/30 rounded-lg text-gray-800 dark:text-gray-200 shadow-xs">
-			<div class="absolute -left-4 top-2 w-10 h-10 text-primary-100 ">
+	<figure>
+		<blockquote>
+			<div>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 					<path
 						  d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
 				</svg>
 			</div>
-			<div class="relative z-10 text-lg md:text-xl font-serif leading-relaxed px-5 py-2">
+			<div>
 				<slot />
 			</div>
-			<div class="absolute -right-4 -bottom-2 w-10 h-10 text-primary-100  transform rotate-180">
+			<div>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 					<path
 						  d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
 				</svg>
 			</div>
 		</blockquote>
-		<figcaption v-if="$slots.cite || extractedCitation"
-					class="mt-3 text-right text-sm text-gray-600 dark:text-gray-400 font-medium pr-4">
-			— <cite class="not-italic">
+		<figcaption v-if="$slots.cite || extractedCitation">
+			— <cite>
 				<slot v-if="$slots.cite" name="cite" />
 				<span v-else>{{ extractedCitation }}</span>
 			</cite>

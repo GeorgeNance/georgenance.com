@@ -1,6 +1,6 @@
 <template>
-  <main class="min-h-screen">
-    <AppHeader class="mb-8" title="Subscribe" :description="description" />
+  <main>
+    <AppHeader title="Subscribe" :description="description" />
 
   </main>
 </template>
