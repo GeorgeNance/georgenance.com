@@ -27,6 +27,10 @@ export default defineNuxtConfig({
     },
   },
 
+  devServer: {
+    port: 3080,
+  },
+
   colorMode: {
     preference: 'dark', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found
