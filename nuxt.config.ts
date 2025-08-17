@@ -32,10 +32,10 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'dark', // default value of $colorMode.preference
-    fallback: 'dark', // fallback value if not system preference found
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
     storage: 'localStorage', // or 'sessionStorage' or 'cookie'
-    classSuffix: '-mode',
+    classSuffix: '',
   },
 
   vite: {
@@ -53,8 +53,7 @@ export default defineNuxtConfig({
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       meta: [
-        { name: 'theme-color', content: '#1e293b', media: '(prefers-color-scheme: dark)' },
-        { name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: light)' },
+        { name: 'theme-color', content: '#0f4c3a' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
@@ -65,7 +64,7 @@ export default defineNuxtConfig({
       },
 
       bodyAttrs: {
-        class: "antialiased text-slate-500 dark:text-slate-400 min-h-screen h-full dark:bg-slate-900 bg-white ",
+        class: "antialiased min-h-screen h-full",
       },
     },
   },
@@ -88,19 +87,15 @@ export default defineNuxtConfig({
         remarkPlugins: {
           'remark-reading-time': {}
         },
-
         highlight: {
           theme: {
-            // Default theme (same as single string)
-            default: 'min-light',
-            dark: 'nord',
-            // Theme used if `html.sepia`
-            sepia: "monokai",
+            default: 'github-light',
+            dark: 'tokyo-night'
           },
+          langs: ['javascript', 'typescript', 'vue', 'html', 'css', 'json', 'bash', 'shell', 'python', 'go', 'rust', 'java', 'yaml', 'markdown']
         },
       },
     },
-
   },
 
   image: {

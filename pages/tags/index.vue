@@ -5,10 +5,10 @@
 			<ul v-for="(tag, tagCount) in tagCount">
 				<li>
 					<NuxtLink :to="`/tags/${tag.tag}`"
-							  class="text-2xl font-bold text-gray-900 dark:text-gray-100 hover:text-cyan-500">
+							  class="text-2xl font-bold text-ink-400 hover:text-forest-800">
 						{{ tag.tag }}
 					</NuxtLink>
-					<span class=" ml-2 text-gray-500 dark:text-gray-400">({{ tag.count }})</span>
+					<span class=" ml-2 text-ink-200">({{ tag.count }})</span>
 				</li>
 
 			</ul>

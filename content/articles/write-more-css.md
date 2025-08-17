@@ -24,7 +24,7 @@ PostCSS bring upcoming features such as selectors, functions, and automatically 
 CSS added support for [custom variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) and every modern browser supports it. The beauty of CSS variables is that you can dynamically change the variable values without needing to recompile. My site uses CSS variables for dark mode. If you haven’t tried it, Click the moon icon in the top right. 
 
 
-```CSS
+```css
 :root {
   --color-primary: #399ee6;
   --color-text: #222;
@@ -48,7 +48,7 @@ For the longest time you would have one giant CSS file for everything, but moder
 
 With `calc` you can do much more then you ever could before. It allows you to add, subtract, multiply, and divide in CSS. You can even do calculation using different data types such as percents and pixels.
 
-```CSS
+```css
 width: calc(100% - 30px);
 ```
 

@@ -1,50 +1,49 @@
 <template>
-  <NuxtLink :to="`/articles/${article.slug}`" class="group">
-    <article v-motion :initial="{
-      opacity: 0,
-      y: -10,
-      scale: 1,
-    }" :enter="{
-      opacity: 1,
-      y: 0,
-      scale: 1,
-    }" :delay="delayAnimation"
-             class="hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-4 transition-colors duration-300 ease-in-out">
-      <div class="flex items-center gap-2">
-        <h2
-            class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-primary-600">
-          {{ article.title }}
-        </h2>
-        <span v-if="showUnpublishedBadge"
-              class="px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full">
+  <NuxtLink :to="`/articles/${article.slug}`" class="block group">
+    <article class="py-article border-b border-border-light last:border-b-0">
+      <!-- Article Title -->
+      <h2 class="text-article-md font-bold text-text-primary group-hover:opacity-80 transition-opacity mb-3 leading-tight">
+        {{ article.title }}
+      </h2>
+      
+      <!-- Article Preview/Description -->
+      <p class="text-body text-text-secondary mb-4 leading-relaxed">
+        {{ article.description }}
+      </p>
+      
+      <!-- Article Meta -->
+      <div class="flex items-center text-meta text-text-tertiary">
+        <span>George Nance</span>
+        <span class="mx-2">·</span>
+        <time :datetime="article.date">{{ formatDate(article.date) }}</time>
+        <span v-if="article.meta?.readingTime" class="mx-2">·</span>
+        <span v-if="article.meta?.readingTime">{{ article.meta.readingTime.text }}</span>
+        <span v-if="showUnpublishedBadge" class="ml-3 px-2 py-1 text-xs bg-gray-100 text-gray-600 rounded">
           Unpublished
         </span>
       </div>
-
-      <!-- Read Time -->
-      <p class="relative z-10 text-sm text-gray-600 dark:text-gray-400">
-        <span class="relative z-10 text-sm text-gray-600 dark:text-gray-400" v-if="article.meta.readingTime">
-          {{ article.meta.readingTime.text }}
-        </span>
-        <span class="px-2">❖</span>
-        {{ article.description }}
-      </p>
     </article>
   </NuxtLink>
 </template>
 
 <script setup>
-const { article, delayAnimation } = defineProps({
+const { article } = defineProps({
   article: {
     type: Object,
     required: true,
-  },
-  delayAnimation: {
-    type: Number,
-    default: 0,
   },
 });
 
 // Check if we're in dev mode and article is unpublished
 const showUnpublishedBadge = process.dev && article.published === false;
+
+// Format date in Substack style
+const formatDate = (dateString) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+};
 </script>

@@ -1,29 +1,27 @@
 <template>
   <div>
-    <div
-         class="bg-white dark:bg-gray-800 rounded-lg p-5 shadow-md dark:shadow-gray-900/50 border dark:border-gray-700 max-w-xs">
-      <h2 class="text-gray-900 dark:text-gray-100 text-sm tracking-wider font-bold uppercase">
+    <div class="bg-white rounded-lg p-6 shadow-soft max-w-xs">
+      <h2 class="text-gray-900 text-sm font-bold tracking-wide uppercase mb-4">
         Table of contents
       </h2>
-      <!-- <pre><code>
-      {{ toc }}
-    </code></pre> -->
-      <nav class="mt-4">
-        <ul class="space-y-3">
+      
+      <nav>
+        <ul class="space-y-2">
           <li v-for="link of toc.links" :key="link.id" :class="{
             'pl-4': link.depth === 3
           }" class="relative">
-            <a @click.prevent="scrollToSection(link)" :class="{
-              'text-primary-100 hover:text-primary-500': link.id === currentlyActiveToc,
-              'text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary': link.id !== currentlyActiveToc
-            }" class="block text-sm transition-colors duration-200 ease-in-out py-1 font-semibold" :style="{
-              opacity: link.id === currentlyActiveToc ? '1' : '0.7'
-            }" :href="`#${link.id}`">
-              <span class="relative">
-                {{ link.text }}
+            <a @click.prevent="scrollToSection(link)" 
+               class="block text-sm transition-all duration-200 ease-in-out py-2 px-2 rounded-lg font-medium hover:bg-forest-50"
+               :class="{
+                 'text-forest-800 bg-forest-50 font-semibold': link.id === currentlyActiveToc,
+                 'text-gray-600 hover:text-forest-700': link.id !== currentlyActiveToc
+               }" 
+               :href="`#${link.id}`">
+              <span class="relative flex items-center">
                 <span v-if="link.id === currentlyActiveToc"
-                      class="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-primary-100  rounded-full">
+                      class="absolute -left-3 top-1/2 -translate-y-1/2 w-1 h-4 bg-forest-600 rounded-full">
                 </span>
+                {{ link.text }}
               </span>
             </a>
           </li>

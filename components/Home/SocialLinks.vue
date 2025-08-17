@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold dark:text-gray-300 text-gray-500 mb-4">FIND ME ON</h2>
+    <h2 class="uppercase text-xs font-semibold text-gray-600 mb-4 tracking-wider">FIND ME ON</h2>
     <div class="space-y-5 flex flex-row justify-evenly">
       <NuxtLink v-for="link in links" :key="link.icon" :to="link.url" target="_blank" external
-                class="flex items-end gap-2 dark:hover:text-gray-200 group hover:text-gray-600">
+                class="flex items-end gap-2 text-gray-700 hover:text-forest-700 group transition-colors duration-200">
         <div v-motion :enter="{
           opacity: 1,
           y: 0,

@@ -1,20 +1,20 @@
 <template>
-  <NuxtLoadingIndicator color="#14b8a6" />
-  <div class="bg-linear-to-br dark:from-slate-900 dark:to-slate-800 from-white to-slate-100">
+  <NuxtLoadingIndicator color="#0f4c3a" />
+  <div class="min-h-screen bg-white">
+    
+    <!-- Content area -->
+    <div class="relative">
 
 
 
     <AppNavbar />
-    <div class="h-32"></div>
-    <div class="z-10">
-      <NuxtLayout />
+      <div class="h-32"></div>
+      <main class="relative">
+        <NuxtLayout />
+      </main>
+      <div class="h-32"></div>
+      <AppFooter />
     </div>
-    <div class="h-32"></div>
-    <AppFooter />
-
-
-
-
   </div>
 </template>
 

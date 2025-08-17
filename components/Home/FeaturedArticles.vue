@@ -1,15 +1,12 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold dark:text-gray-300 text-gray-500 mb-6">
-      RECENT ARTICLES
-    </h2>
-    <ul class="space-y-8">
-      <li v-for="(article, id) in articles" :key="id">
-        <AppArticleCard :article="article" />
-      </li>
-    </ul>
-    <div class="flex items-center justify-center mt-6 text-sm">
-      <NuxtLink label="All Articles &rarr;" to="/articles" variant="link" color="gray" />
+    <div class="space-y-0">
+      <AppArticleCard v-for="(article, id) in articles" :key="id" :article="article" />
+    </div>
+    <div class="text-center mt-section">
+      <NuxtLink to="/articles" class="text-text-primary hover:opacity-80 transition-opacity">
+        View all articles
+      </NuxtLink>
     </div>
   </div>
 </template>
