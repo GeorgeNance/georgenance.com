@@ -54,8 +54,5 @@ function getHost(url) {
   return host;
 }
 
-function getThumbnail(url) {
-  const host = getHost(url);
-  return `https://logo.clearbit.com/${host}`;
-}
+
 </script>
