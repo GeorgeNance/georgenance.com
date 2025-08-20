@@ -8,7 +8,7 @@
             This article is not published yet.
           </div>
           
-          <h1 class="font-bold text-text-primary mb-8" style="font-size: 48px; line-height: 1.2; letter-spacing: -0.02em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+          <h1 class="font-bold text-text-primary mb-8 text-5xl leading-tight tracking-tight font-sans custom-article-title">
             {{ post.title }}
           </h1>
           
