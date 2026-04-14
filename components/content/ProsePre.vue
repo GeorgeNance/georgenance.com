@@ -34,7 +34,7 @@ const copyCode = (): void => {
 			codeCopied.value = true;
 			setTimeout(function () {
 				codeCopied.value = false;
-			}, 5000);
+			}, 3000);
 		})
 		.catch((e) => {
 			console.error('Error: Unable to copy code.');
@@ -43,23 +43,31 @@ const copyCode = (): void => {
 </script>
 
 <template>
-	<div class="relative rounded-lg bg-[var(--shiki-default-bg)] shadow-lg ">
-		<div class="flex justify-end items-center py-1 px-2 pl-3 absolute top-0 right-0">
-			<div v-if="props.filename"
-				 class="ml-0 mr-auto font-mono text-sm text-[var(--shiki-default)] opacity-50 truncate">
-				<i>{{ filename }}</i>
-			</div>
-			<span v-if="codeCopied" class="px-3 rounded-sm text-green-300 font-[sans-serif] text-sm opacity-50">
-				<i>Copied</i>
+	<div class="group relative rounded-lg border border-warm-200 dark:border-warm-800 overflow-hidden">
+		<div class="flex items-center justify-between px-4 py-2 border-b border-warm-200 dark:border-warm-800 bg-warm-850 dark:bg-warm-950/60">
+			<span v-if="props.filename" class="font-mono text-xs text-warm-400 truncate">
+				{{ filename }}
 			</span>
-			<button class="px-3  rounded-sm border font-[sans-serif] text-sm text-[var(--shiki-default)] opacity-25 hover:opacity-50 bg-inherit border-[var(--shiki-default)] hover:text-white hover:border-white whitespace-nowrap transition-all duration-300"
-					@click="copyCode">
-				Copy
+			<span v-else-if="props.language" class="font-mono text-xs text-warm-500 uppercase tracking-wider">
+				{{ language }}
+			</span>
+			<span v-else />
+			<button
+				class="flex items-center gap-1.5 font-mono text-xs transition-colors duration-200"
+				:class="codeCopied ? 'text-green-400' : 'text-warm-500 hover:text-warm-300'"
+				@click="copyCode">
+				<template v-if="codeCopied">
+					<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+					Copied
+				</template>
+				<template v-else>
+					<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="13" height="13" rx="2" /><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" /></svg>
+					Copy
+				</template>
 			</button>
 		</div>
-		<div class="max-w-[calc(100vw-4rem)]">
-			<pre :class="['m-0  overflow-x-auto px-6', $props.class]">
-				<div class=""><slot/></div></pre>
+		<div class="overflow-x-auto [&>pre]:!bg-transparent">
+			<pre :class="['m-0 px-4 py-4 text-sm leading-relaxed', $props.class]"><slot /></pre>
 		</div>
 	</div>
 </template>

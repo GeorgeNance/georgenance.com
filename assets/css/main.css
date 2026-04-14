@@ -50,6 +50,31 @@ body {
   @apply no-underline;
 }
 
+.prose code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+}
+
+.prose :not(pre) > code {
+  background-color: var(--color-warm-100);
+  padding: 0.15em 0.4em;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-warm-200);
+}
+
+.dark-mode .prose :not(pre) > code {
+  background-color: var(--color-warm-850);
+  border-color: var(--color-warm-700);
+}
+
+.prose pre code {
+  font-family: 'JetBrains Mono', monospace;
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
 /* Staggered entrance animations */
 @keyframes fadeUp {
   from {

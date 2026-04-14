@@ -1,9 +1,15 @@
 <template>
   <main class="min-h-screen">
     <AppHeader class="mb-8" title="Articles" :description="description" />
-    <div v-for="(year, index) in sortedYears" :key="index" class="my-4">
-      <h2 class="text-2xl font-bold mb-2 text-warm-800 dark:text-warm-50 font-serif">{{ year }}</h2>
-      <ul class="space-y-4 ml-4">
+    <div v-for="(year, index) in sortedYears" :key="index" class="mt-8 first:mt-6">
+      <h2 class="flex items-center gap-4 text-sm font-semibold uppercase tracking-widest text-warm-400 dark:text-warm-500 mb-1">
+        {{ year }}
+        <span class="flex-1 flex items-center gap-3">
+          <span class="flex-1 h-px bg-warm-200 dark:bg-warm-800"></span>
+          <span class="h-2 w-2 rotate-45 border border-warm-300 dark:border-warm-700"></span>
+        </span>
+      </h2>
+      <ul>
         <li v-for="(article, id) in groupedArticles[year]" :key="article._path">
           <AppArticleCard :article="article" :delay-animation="articleDelays[id]" />
         </li>

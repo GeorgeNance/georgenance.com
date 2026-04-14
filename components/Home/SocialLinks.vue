@@ -17,7 +17,7 @@
 const links = [
   {
     name: "GitHub",
-    url: "https://github.com/GeorgeNance",
+    url: "hIt ittps://github.com/GeorgeNance",
     icon: "bi:github",
   },
   {
