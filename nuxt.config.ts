@@ -65,7 +65,7 @@ export default defineNuxtConfig({
       },
 
       bodyAttrs: {
-        class: "antialiased text-slate-500 dark:text-slate-400 min-h-screen h-full dark:bg-slate-900 bg-white ",
+        class: "antialiased min-h-screen h-full",
       },
     },
   },
@@ -91,11 +91,9 @@ export default defineNuxtConfig({
 
         highlight: {
           theme: {
-            // Default theme (same as single string)
-            default: 'min-light',
-            dark: 'nord',
-            // Theme used if `html.sepia`
-            sepia: "monokai",
+            default: 'ayu-mirage',
+            dark: 'ayu-mirage',
+            sepia: 'ayu-mirage',
           },
         },
       },
@@ -110,7 +108,11 @@ export default defineNuxtConfig({
   googleFonts: {
     display: "swap",
     families: {
-      Inter: [400, 500, 600, 700, 800, 900],
+      Outfit: [300, 400, 500, 600, 700],
+      Newsreader: {
+        wght: [400, 500, 600, 700],
+        ital: [400, 500, 600, 700],
+      },
       Merriweather: [400, 700],
       'JetBrains Mono': [400, 500, 600, 700, 800, 900],
     },

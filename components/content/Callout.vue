@@ -1,9 +1,9 @@
 <template>
-	<aside class="my-4 px-4 py-3 rounded-md shadow-sm relative overflow-hidden border border-transparent dark:border-opacity-10"
+	<aside class="my-4 px-4 py-3 rounded-md shadow-xs relative overflow-hidden border border-transparent dark:border-opacity-10"
 		   :class="typeClass.bg">
 		<span class="w-1.5 h-full absolute bottom-0 left-0 top-0" :class="typeClass.side">
 		</span>
-		<p class="text-xl font-medium ml-4 mb-1" v-if="title != ''">{{ title }}</p>
+		<p class="text-xl font-medium ml-4 mb-1 text-warm-800 dark:text-warm-100" v-if="title != ''">{{ title }}</p>
 		<div class="ml-4 prose dark:prose-invert max-w-none">
 			<slot></slot>
 		</div>
@@ -27,14 +27,13 @@ const props = defineProps({
 	},
 });
 
-// Computed classes based on the type prop
 const typeClasses = {
 	info: {
 		bg: "bg-blue-50/80 dark:bg-blue-900/15 outline-blue-300 dark:outline-blue-700",
 		side: "bg-secondary",
 	},
 	warning: {
-		bg: "bg-orange-50/90 dark:bg-amber-900/15 outline-orange-300 dark:outline-amber-600",
+		bg: "bg-warm-100/90 dark:bg-warm-850/50 outline-warm-300 dark:outline-warm-700",
 		side: "bg-primary",
 	},
 	danger: {

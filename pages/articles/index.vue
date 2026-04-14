@@ -2,7 +2,7 @@
   <main class="min-h-screen">
     <AppHeader class="mb-8" title="Articles" :description="description" />
     <div v-for="(year, index) in sortedYears" :key="index" class="my-4">
-      <h2 class="text-2xl font-bold mb-2 text-zinc-800 dark:text-zinc-100 ">{{ year }}</h2>
+      <h2 class="text-2xl font-bold mb-2 text-warm-800 dark:text-warm-50 font-serif">{{ year }}</h2>
       <ul class="space-y-4 ml-4">
         <li v-for="(article, id) in groupedArticles[year]" :key="article._path">
           <AppArticleCard :article="article" :delay-animation="articleDelays[id]" />

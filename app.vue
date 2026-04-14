@@ -1,27 +1,16 @@
 <template>
-  <NuxtLoadingIndicator color="#14b8a6" />
-  <div class="bg-linear-to-br dark:from-slate-900 dark:to-slate-800 from-white to-slate-100">
-
-
-
+  <NuxtLoadingIndicator color="#D4A853" />
+  <div class="min-h-screen bg-warm-50 dark:bg-warm-950 text-warm-600 dark:text-warm-300 transition-colors duration-300 overflow-x-clip">
     <AppNavbar />
-    <div class="h-32"></div>
-    <div class="z-10">
-      <NuxtLayout />
-    </div>
-    <div class="h-32"></div>
+    <div class="h-24 md:h-28"></div>
+    <NuxtLayout />
+    <div class="h-20"></div>
     <AppFooter />
-
-
-
-
   </div>
 </template>
 
 <script setup lang="ts">
 useHead({
-  // as a string,
-  // where `%s` is replaced with the title
   titleTemplate: '%s | George Nance',
 })
 </script>

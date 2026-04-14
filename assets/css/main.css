@@ -1,66 +1,73 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
-/* @config '../../tailwind.config.js'; */
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
+@theme {
+  /* Warm gold accent */
+  --color-primary: #D4A853;
+  --color-primary-500: #D4A853;
+  --color-primary-100: #B8922E;
 
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-
-
-
-
-/* @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-} */
-
-
-@theme{
-  /* Darker to lighter */
-  --color-primary: #E6A817;
-  --color-primary-500: #E6A817;
-  --color-primary-100: #B7830E;
-
-  --color-secondary: #2ABEB5;
-  --color-secondary-500: #1A8F88 ;
-  --color-secondary-100: #2ABEB5;
-
-
-  --color-tertiary: #8E44AD;
-  --color-tertiary-500: #508F69;
-  --color-tertiary-100: #E6A817;
-
-
-
-
+  /* Warm neutral scale */
+  --color-warm-50: #FAFAF7;
+  --color-warm-100: #F3F1EC;
+  --color-warm-200: #E8E4DD;
+  --color-warm-300: #C4BFB5;
+  --color-warm-400: #9C9689;
+  --color-warm-500: #817B71;
+  --color-warm-600: #6B665C;
+  --color-warm-700: #4A4740;
+  --color-warm-800: #2A2825;
+  --color-warm-850: #201F1D;
+  --color-warm-900: #171615;
+  --color-warm-950: #121110;
 
   /* Fonts */
-  --font-sans: 'Merriweather', serif;
-  --font-serif: 'Merriweather', serif;
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Newsreader', serif;
+  --font-display: 'Newsreader', serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
-
-
-
-body {
-	font-family: 'Merriweather', serif;
+html {
+  background-color: #FAFAF7;
 }
 
+.dark-mode html,
+html.dark-mode {
+  background-color: #121110;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.prose {
+  font-family: 'Merriweather', serif;
+}
 
 .prose h2 a,
 .prose h3 a {
   @apply no-underline;
 }
 
+/* Staggered entrance animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.animate-fade-up {
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stagger-1 { animation-delay: 0ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 200ms; }
+.stagger-4 { animation-delay: 300ms; }
+.stagger-5 { animation-delay: 400ms; }

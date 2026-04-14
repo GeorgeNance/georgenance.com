@@ -1,6 +1,5 @@
 <template>
-  <footer class="max-w-2xl mx-auto text-gray-600 dark:text-gray-200 text-sm text-center pb-8">
-    <br>
-    <p>© {{ new Date().getFullYear() }} George Nance. All rights reserved.</p>
+  <footer class="max-w-3xl mx-auto px-6 text-warm-400 dark:text-warm-600 text-xs text-center pb-8">
+    <p>&copy; {{ new Date().getFullYear() }} George Nance</p>
   </footer>
 </template>

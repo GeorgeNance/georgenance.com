@@ -1,13 +1,12 @@
 <template>
   <div>
-    <h1 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 font-serif">
+    <h1 class="text-2xl font-bold tracking-tight text-warm-800 dark:text-warm-50 font-serif">
       {{ title }}
     </h1>
-    <p class="mt-4 text-base text-gray-600 dark:text-gray-400 font-serif">
+    <p v-if="description" class="mt-4 text-base text-warm-500 dark:text-warm-400">
       {{ description }}
     </p>
-    <!-- A glowy line -->
-    <div class="mt-6 h-1 w-full bg-linear-to-r from-zinc-600 to-zinc-400 rounded-full"></div>
+    <div class="mt-6 h-px w-full bg-warm-200 dark:bg-warm-800/50"></div>
   </div>
 </template>
 

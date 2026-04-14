@@ -1,40 +1,27 @@
 <template>
-  <NuxtLink :to="`/articles/${article.slug}`" class="group">
-    <article v-motion :initial="{
-      opacity: 0,
-      y: -10,
-      scale: 1,
-    }" :enter="{
-      opacity: 1,
-      y: 0,
-      scale: 1,
-    }" :delay="delayAnimation"
-             class="hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-4 transition-colors duration-300 ease-in-out">
-      <div class="flex items-center gap-2">
-        <h2
-            class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-primary-600">
-          {{ article.title }}
-        </h2>
-        <span v-if="showUnpublishedBadge"
-              class="px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full">
-          Unpublished
-        </span>
-      </div>
-
-      <!-- Read Time -->
-      <p class="relative z-10 text-sm text-gray-600 dark:text-gray-400">
-        <span class="relative z-10 text-sm text-gray-600 dark:text-gray-400" v-if="article.meta.readingTime">
-          {{ article.meta.readingTime.text }}
-        </span>
-        <span class="px-2">❖</span>
-        {{ article.description }}
-      </p>
-    </article>
+  <NuxtLink :to="`/articles/${article.slug}`"
+            class="group block py-4 -mx-3 px-3 rounded-lg hover:bg-warm-100 dark:hover:bg-warm-800/30 transition-colors">
+    <div class="flex items-baseline justify-between gap-4">
+      <h3 class="text-base font-medium text-warm-800 dark:text-warm-100 group-hover:text-primary transition-colors">
+        {{ article.title }}
+      </h3>
+      <span v-if="showUnpublishedBadge"
+            class="shrink-0 px-2 py-0.5 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full">
+        Draft
+      </span>
+    </div>
+    <p class="mt-1 text-sm text-warm-500 dark:text-warm-400 line-clamp-1">
+      <span v-if="article.meta?.readingTime" class="text-warm-400 dark:text-warm-500">
+        {{ article.meta.readingTime.text }}
+      </span>
+      <span v-if="article.meta?.readingTime" class="mx-1.5 text-warm-300 dark:text-warm-700">&middot;</span>
+      {{ article.description }}
+    </p>
   </NuxtLink>
 </template>
 
 <script setup>
-const { article, delayAnimation } = defineProps({
+const { article } = defineProps({
   article: {
     type: Object,
     required: true,
@@ -45,6 +32,5 @@ const { article, delayAnimation } = defineProps({
   },
 });
 
-// Check if we're in dev mode and article is unpublished
 const showUnpublishedBadge = process.dev && article.published === false;
 </script>
