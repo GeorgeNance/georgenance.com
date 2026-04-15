@@ -33,26 +33,12 @@ const { data: articles } = await useAsyncData(route.path, () => {
   let query = queryCollection("article")
     .order('date', 'DESC');
 
-  // Only filter by published in production
   if (!process.dev) {
     query = query.where("published", "=", true);
   }
 
   return query.all();
 });
-
-// Debug logging
-console.log("Articles query result:", articles.value);
-if (articles.value) {
-  articles.value.forEach(article => {
-    console.log(`Article "${article.title}":`, {
-      published: article.published,
-      publishedType: typeof article.published,
-      date: article.date,
-      slug: article.slug
-    });
-  });
-}
 
 const groupedArticles = computed(() => {
   if (!articles.value) return {};
@@ -67,14 +53,11 @@ const groupedArticles = computed(() => {
   }, {});
 });
 
-
-// Add a new computed property for sorted years
 const sortedYears = computed(() => {
   return Object.keys(groupedArticles.value)
     .map(Number)
     .sort((a, b) => b - a);
 });
-
 
 const articleDelays = computed(() => {
   let delayMap = {};
@@ -87,5 +70,4 @@ const articleDelays = computed(() => {
 
   return delayMap;
 });
-console.log(articleDelays.value);
 </script>

@@ -66,7 +66,7 @@ A great project isn't just about writing code—it's about solving real problems
 
 ## Let's Connect
 
-I'm always open to discussing ideas, collaborating on projects, or just geeking out over tech. Feel free to reach out through my contact page or social media.
+I'm always open to discussing ideas, collaborating on projects, or just geeking out over tech.
 
 ::Socials{:showTitle="false"}
 ::

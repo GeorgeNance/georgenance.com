@@ -3,7 +3,11 @@
     <div class="space-y-16 sm:space-y-20">
       <HomeIntro />
       <HomeFeaturedArticles />
-      <HomeSocialLinks />
+      <Socials :showTitle="false" class="animate-fade-up stagger-4" />
     </div>
   </main>
 </template>
+
+<script setup>
+import Socials from '~/components/content/Socials.vue'
+</script>
