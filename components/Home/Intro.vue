@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="flex items-center gap-5 mb-8 animate-fade-up stagger-1">
-      <NuxtImg src="/img/profile.jpg" alt="George Nance" draggable="false"
-               class="rounded-full h-16 w-16 md:h-20 md:w-20 ring-2 ring-warm-200 dark:ring-warm-800 bg-warm-100 dark:bg-warm-900 shrink-0"
-               sizes="80px" placeholder format="webp" />
+      <img src="/img/profile.jpg" alt="George Nance" draggable="false"
+           class="rounded-full h-16 w-16 md:h-20 md:w-20 ring-2 ring-warm-200 dark:ring-warm-800 bg-warm-100 dark:bg-warm-900 shrink-0 object-cover"
+           width="80" height="80" loading="eager" decoding="async">
       <div>
         <h1 class="text-2xl md:text-3xl font-serif font-bold tracking-tight text-warm-800 dark:text-warm-50">
           George Nance

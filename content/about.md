@@ -38,7 +38,7 @@ My fascination with technology started with video games like RuneScape and The S
 
 I didn't take the traditional path into tech — I grew up in foster care and spent most of my teenage years in a group home. While in college, I lost both my parents and had to make some hard decisions about where I wanted my life to go. So I made the completely sane decision to move 1500 miles away from my family and friends to start a new life in Arizona. I was able to get a job working as an intern at a "startup-like" company that worked with b2b clients. From there, I was hooked. 
 
-Currently, I'm working as a Full Stack Developer at One Origin. I also have ran a side business with my fiancee, Maddie, creating AI pet portraits.
+Currently, I'm working as a Senior Engineer at ASU.
 
 ## Interests & Hobbies
 

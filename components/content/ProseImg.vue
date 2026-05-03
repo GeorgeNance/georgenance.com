@@ -1,18 +1,30 @@
 <template>
-  <!-- <img :src="refinedSrc" :alt="alt" :width="width" :height="height"> -->
   <div class="p-2 md:-mx-8 lg:-mx-16">
-    <NuxtImg class="rounded-xl shadow-lg w-full cursor-pointer" :src="src" :alt="alt"
-             @click.stop="() => (showLightbox = !showLightbox)" width="800" sizes="sm:600px md:800px" placeholder
-             densities="x1 x2" />
+    <img
+      class="w-full cursor-pointer rounded-xl shadow-lg"
+      :src="refinedSrc"
+      :alt="alt"
+      :width="width"
+      :height="height"
+      loading="lazy"
+      decoding="async"
+      @click.stop="() => (showLightbox = !showLightbox)"
+    >
   </div>
   <Teleport to="body">
     <Transition enter-from-class="opacity-0" leave-to-class="opacity-0">
-      <div v-if="showLightbox" class="z-10 fixed bottom-0 right-0 top-0 left-0
-               bg-black bg-opacity-50 flex items-center
-               justify-center backdrop-blur-xs transition-all
-               duration-300 md:p-8 w-full h-full" @click.stop="() => (showLightbox = !showLightbox)">
-        <NuxtImg :src="src" :alt="alt" width="100%" height="auto" sizes="sm:600px md:800px lg:1600px xl:6000px"
-                 densities="x1 x2" />
+      <div
+        v-if="showLightbox"
+        class="fixed inset-0 z-10 flex h-full w-full items-center justify-center bg-black bg-opacity-50 backdrop-blur-xs transition-all duration-300 md:p-8"
+        @click.stop="() => (showLightbox = !showLightbox)"
+      >
+        <img
+          class="max-h-full max-w-full object-contain"
+          :src="refinedSrc"
+          :alt="alt"
+          loading="lazy"
+          decoding="async"
+        >
       </div>
     </Transition>
   </Teleport>
