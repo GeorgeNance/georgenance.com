@@ -6,6 +6,8 @@ published: true
 date: 2024-02-25
 ---
 
+::about-portrait
+::
 
 I'm a full-stack developer, AI enthusiast, and problem-solver who loves creating impactful digital experiences. Whether it's building scalable web applications or experimenting with AI models, I thrive on solving complex challenges and pushing technology forward.
 
