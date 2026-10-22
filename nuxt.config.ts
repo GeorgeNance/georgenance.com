@@ -105,6 +105,14 @@ export default defineNuxtConfig({
     format: ['webp']
   },
 
+  // Cloudflare Pages serves the prerendered site as static files.
+  nitro: {
+    preset: 'static',
+    prerender: {
+      failOnError: false,
+    },
+  },
+
   googleFonts: {
     display: "swap",
     families: {
