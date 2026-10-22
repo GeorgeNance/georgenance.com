@@ -84,9 +84,12 @@ if (post.value) {
   });
 
   if (post.value.ogImage) {
-    defineOgImage(`${post.value.ogImage}`)
+    useSeoMeta({
+      ogImage: post.value.ogImage,
+      twitterImage: post.value.ogImage,
+    })
   } else {
-    defineOgImageComponent('BlogPost', {
+    defineOgImage('BlogPost', {
       title: post.value.title,
       subTitle: post.value.description,
     })

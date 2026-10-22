@@ -3,7 +3,7 @@ title: 'How to be productive as an ADHD programmer'
 date: 2020-06-19
 tags: ['adhd', 'productivity']
 slug: being-productive-programmer-adhd
-ogImage: cover.jpg
+ogImage: /articles/programming-with-adhd/cover.jpg
 description: Being productive while having ADHD  can sometimes feel like a colossal task. So I compiled a list of methods that will help you stay focused as a programmer.
 published: false
 ---

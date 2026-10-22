@@ -4,7 +4,7 @@ date: 2019-09-05
 tags: ['git']
 slug: delete-untracked-files-git
 description: If you want to remove untracked files from your repo, git reset wont work
-ogImage: cover.png
+ogImage: /articles/delete-untracked-files-git/cover.png
 published: true
 ---
 
