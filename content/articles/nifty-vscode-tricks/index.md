@@ -11,7 +11,7 @@ published: true
 
 I have begun to move most of my colors on my website to using HSL and needed an easy way to select colors. I discovered that by clicking on the status bar in the color picker, you can change the color format. At the moment it supports RGB, Hex, and HSL.
 
-![Color Picker](/img/articles/vscode-color-picker.gif)
+![Color Picker](vscode-color-picker.gif)
 
 <Callout title="Side note about alpha">
 
@@ -27,7 +27,7 @@ This setting is in:
 
 `Settings > Text Editor > Formatting`
 
-![Picture of Auto-Format setting in VsCode](/img/articles/autoformat.png)
+![Picture of Auto-Format setting in VsCode](autoformat.png)
 
 There's also a setting to format on paste! Great for keeping those Stack Overflow snippets formatted the same as the rest of your code.
 
@@ -35,6 +35,6 @@ There's also a setting to format on paste! Great for keeping those Stack Overflo
 
 Okay, this one isn't built into vscode, but it's an amazing plugin I discovered. As a developer _trying_ to get better at writing, this one has been useful. I'm using it right now to write this blog post.
 
-![Picture of Write Good Linter in VsCode](/img/articles/lint-grammar.png)
+![Picture of Write Good Linter in VsCode](lint-grammar.png)
 
 Its called [Write Good Linter](https://marketplace.visualstudio.com/items?itemName=travisthetechie.write-good-linter) and you can think of it as the Hemingway editor built into vscode. After installing it, the plugin will detect any unnecessary grammar and put a little <u>squiggle</u> under words that need adjusted.

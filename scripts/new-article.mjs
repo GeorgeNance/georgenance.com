@@ -6,7 +6,8 @@ import readline from "node:readline/promises";
 
 const usage = `Usage: npm run article -- "Your Article Title"
 
-Creates content/articles/YYYY-MM-DD-your-article-title.md and opens it in VS Code.`;
+Creates content/articles/YYYY-MM-DD-your-article-title/index.md and opens it in VS Code.
+Keep the article's images in the same folder and use relative Markdown links.`;
 
 const titleArg = process.argv.slice(2).join(" ").trim();
 
@@ -30,16 +31,19 @@ if (!slug) {
 }
 
 const date = getLocalDate();
-const articleDirectory = path.join(process.cwd(), "content", "articles");
-const articleFileName = `${date}-${slug}.md`;
-const articlePath = path.join(articleDirectory, articleFileName);
+const articlesDirectory = path.join(process.cwd(), "content", "articles");
+const articleDirectory = path.join(articlesDirectory, `${date}-${slug}`);
+const legacyPath = path.join(articlesDirectory, `${date}-${slug}.md`);
+const articlePath = (await fileExists(legacyPath))
+  ? legacyPath
+  : path.join(articleDirectory, "index.md");
 const template = buildTemplate({
   date,
   slug,
   title: rawTitle,
 });
 
-await mkdir(articleDirectory, { recursive: true });
+await mkdir(path.dirname(articlePath), { recursive: true });
 
 const alreadyExists = await fileExists(articlePath);
 

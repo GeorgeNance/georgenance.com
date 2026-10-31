@@ -1,7 +1,7 @@
 ---
 title: 'The Apps I Use'
 date: 2020-11-28
-ogImage: /img/articles/apps-i-use.jpg
+ogImage: apps-i-use.jpg
 tags: ['productivity','tools','adhd']
 slug: apps-i-use
 description: I have assembled a list of great apps that I use everyday that make my life easier
@@ -16,7 +16,7 @@ Staying productive in a digital world can be hard without the right tools. I hav
 
 ## [Bear](https://bear.app)
 Bear is a note taking app that brilliantly simple.  
-![Bear notes](/img/articles/bear.png)
+![Bear notes](bear.png)
 
 Where it thrives is its ability to use anywhere in your note and sort them into collections. 
 
@@ -32,7 +32,7 @@ Bear is an excellent value at only $15 a year.  That gets you a mobile app and a
 
 Obsidian is the newest player in my arsenal. It is a research note taking app created during the Covid-19 lockdown as a fun project. quickly evolved into quite a hit.
 
-![Obsidian Markdown Editor](/img/articles/obsidian.png)
+![Obsidian Markdown Editor](obsidian.png)
 
 
 What makes Obsidian different ? Its based off of the [zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) system.  Which is a system of taking notes and linking them together with certain phrases or words. 
@@ -42,7 +42,7 @@ I will be the first to tell you I am no expert at this system but I love the ide
 Obsidian comes into play because they support backlinks in notes. Which is a way to connect 2 markdown files to each other. Obsidian also has this cool feature to see how your notes connect. 
 
 
-![Obsidian Graph View](/img/articles/obsidian-2.png)
+![Obsidian Graph View](obsidian-2.png)
 
 
 
@@ -51,12 +51,12 @@ It has become one of my favorite apps and has tons of features like a daily note
 Right now I am using it alongside Bear to import notes that I want to move to a more permanent solution.
 
 ## [Todoist](https://todoist.com/r/georgenancejr_ujvbmr)
-![Todoist](/img/articles/todoist.png)
+![Todoist](todoist.png)
 
 Todoist is a new one for me. For a long time I opposed this kinda of "subscription todo app", but it has been very beneficial in helping get my life together.  The neat thing about about Todoist is projects and the ability to separate many tasks. 
 
 ## [Figma](https://www.figma.com)
-![Figma with logo for georgenance.com](/img/articles/figma.png)
+![Figma with logo for georgenance.com](figma.png)
 
 
 

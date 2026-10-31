@@ -16,13 +16,13 @@ Shelly was the mom I never had. Everything I am now, I can trace back to a found
 
 When I first met Shelly, I thought she was the coolest mom ever. When she learned I was coming over, she ordered me and my friend pizza. Shelly was my friend's mom, but she was really a mom to all who needed it. I remember the night I met her, she was intrested in my living situation at the group home. We talked a long time about it all and she wept at what my story was. I barely knew who she was but I felt at home with her. I could tell that this is someone who cares.
 
-![Rochelle "Shelly" Simpson and me - George, standing on a backporch at night. Shelly is smiling at the camera, George is looking away with a smile.][porch]
+![Rochelle "Shelly" Simpson and me - George, standing on a backporch at night. Shelly is smiling at the camera, George is looking away with a smile.](porch.jpeg)
 
 When I turned 18, I aged out of the group home. The group home would help pay for an apartment for me. But after a few months, I had to start to paying all the bills. At the time I worked at Wendy's making $7.25 an hour. I had no idea how I would ever afford $500 a month. 
 
 I didn't do well with this situation. I was not ready to be on my own. She saw that and didn't want to watch me fall. So she took me in to live with her, alongside her 2 sons, and a girl who also had a difficult childhood.  She tried her hardest to treat us all as her kids. Every lesson one of us got, echo'd to the others. 
 
-![alt text][shelly-2017]
+![alt text](CAA8E92D-0792-41BC-B2DB-FEEB0857C26F_1_105_c.jpeg)
 
 >
 > My kid's will not be a statistic
@@ -42,13 +42,8 @@ I write this because her legacy deserves to be preserved. The life she lived. Sh
 
 ———
 
-![Rochelle Freteig Streder 2025][shelly-2025]
+![Rochelle Freteig Streder 2025](shelly-2025.jpeg)
 
 I don’t think you knew how much that meant to me. I don’t think you knew how much any of it meant to me. I didn’t say it enough. I didn’t say it at all, really. I think I assumed there would be more time. There’s never more time…
 
-Life will never be the same without you. 
-
-[porch]: ../../public/img/articles/2026-05-11-shelly/porch.jpeg
-[photo-2]: ../../public/img/articles/2026-05-11-shelly/photo-2.jpeg
-[shelly-2025]: ../../public/img/articles/2026-05-11-shelly/shelly-2025.jpeg
-[shelly-2017]:../../public/img/articles/2026-05-11-shelly/CAA8E92D-0792-41BC-B2DB-FEEB0857C26F_1_105_c.jpeg
+<center>Life will never be the same without you. </center>

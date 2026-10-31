@@ -16,13 +16,6 @@ export default defineNuxtConfig({
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
 
-  hooks: {
-    'content:file:beforeParse'(ctx: { file: { id?: string; body?: string } }) {
-      if (!ctx.file.id?.endsWith('.md') || typeof ctx.file.body !== 'string') return
-      ctx.file.body = ctx.file.body.replace(/((?:\.\.\/)+)public\//g, '/')
-    },
-  },
-
   routeRules: {
     '/delete-untracked-files-git': { redirect: '/articles/delete-untracked-files-git' },
     '/being-productive-programmer-adhd': { redirect: '/articles/being-productive-programmer-adhd', },
@@ -57,7 +50,8 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/fontaine", "@nuxt/image", '@nuxtjs/seo', '@nuxtjs/color-mode', "@nuxt/content","nuxt-component-meta", // "@nuxthq/studio",
+  // Resolve article-local media before Content caches parsed documents.
+  modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/fontaine", "@nuxt/image", '@nuxtjs/seo', '@nuxtjs/color-mode', 'nuxt-content-assets', "@nuxt/content","nuxt-component-meta", // "@nuxthq/studio",
     "@vueuse/nuxt", '@vueuse/motion/nuxt', 'nuxt-gtag'],
 
 

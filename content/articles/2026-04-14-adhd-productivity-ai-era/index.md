@@ -27,7 +27,7 @@ But this has led to a new issue I am struggling with. Claude Code and Codex are 
 
 Claude Maxing is not great for the ADHD brain. I'm not saying that getting your money's worth isn't worth it. I'm also not shaming building more with AI. But it can take over your life if you don't find a way to balance it. I have spent many Saturdays glued to my screen. *Just 1 more prompt* I tell myself, *then I'll switch over the laundry*. Then to get the most out of your subscritions, you open up a second session -- the first one was taking too long and you have a new idea. Then a third. Before you know it, you're managing several AI coding sessions at once, directing them like a traffic controller.
 
-(!https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajc2aDNieGY5bjR3Zmp2YmIydHB1Z2o4azEyMDdqOHd3bjQ0aXAzYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DuV4BMfIgZ2zC/giphy.gif)[]
+![](adhd-productivity.gif)
 
 
 <!-- TODO: The dopamine loop of chatting with AI (new problem → instant answer → new problem) -->

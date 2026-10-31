@@ -9,7 +9,7 @@ archived: true
 published: true
 ---
 
-![Dead Lines](https://i.imgur.com/cECxC8A.jpg)
+![Dead Lines](deadline-timer.jpg)
 
 > ### The ultimate inspiration is the deadline.
 >
@@ -31,7 +31,7 @@ The truth is, deadlines are very useful. It requires us to manage our time and r
 
 Last month I started using a program called [HacknPlan](https://hacknplan.com/). It is planning tool web application that helps game developers manage their tasks. It is a bit similar to [Trello](https://trello.com). But it is more engineered toward game developers and comes with many useful out of the box features for them. One feature that has improved my workflow is _milestones_. A milestone is a set of tasks you want to get done by a certain date. I sat down one day and just laid out all of the features I wanted to get done in the next month. It turned out to be successful and I worked tirelessly to crank out those extra features before the milestone ended. It felt like I was really making progress by completing smaller tasks. Anything that may take too long, I push to the next month and raised the priority. I would work the highest priority tasks first then move down to lower priority tasks. So even if I missed the deadline for a feature, I would have to get it done before I could work on the other features. By splitting up what I did into tasks, it was easier to see if an idea I came up with would work with my vision of the game.
 
-![My completed tasks](https://i.imgur.com/2qgfXNf.png)
+![My completed tasks](completed-tasks.png)
 _Working a full-time job did not leave me a lot of time for tasks, but I got most of them done_
 
 So this is my challenge to you. If you are having issues with getting things done, If you find yourself abandoning projects because you are overwhelmed, or if your game still does not have its main mechanic implemented, then try a _deadline_. Use a website like [HacknPlan](https://hacknplan.com/), [Trello](https://trello.com), or even just a notepad and arrange your tasks you want to get done this month. Then break it down to what you want to get done each week. Stick to this system and you will see results.

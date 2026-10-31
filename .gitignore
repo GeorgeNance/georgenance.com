@@ -26,3 +26,7 @@ logs
 
 
 **/.Ulysses-Settings.plist
+
+# Keep shared writing settings, not Obsidian's local workspace state.
+content/.obsidian/*
+!content/.obsidian/app.json

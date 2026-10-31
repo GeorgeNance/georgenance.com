@@ -3,7 +3,7 @@ title: '7 Reasons you SHOULD write CSS'
 date: 2020-10-30
 tags: ['css']
 slug: write-more-css
-ogImage: /articles/write-more-css/cover.png
+ogImage: cover.png
 description: SASS, LESS, and Stylus are becoming more irrelevant as CSS becomes more powerful.
 published: true
 ---
@@ -42,7 +42,7 @@ button{
 ## 3. CSS supports imports.
 For the longest time you would have one giant CSS file for everything, but modern CSS allows you to import CSS files. I have began to separate my CSS files to help keep my code more organized. 
 
-![Screenshot of code showing CSS variables ](/img/articles/css-vars.png)
+![Screenshot of code showing CSS variables ](css-vars.png)
 
 ## 4. Calculations are here and they work beautifully. 
 

@@ -1,7 +1,7 @@
 ---
 title: Don’t use frontmatter to seperate your markdown files in GatsbyJS - Use the file system
 date: 2020-08-27
-ogImage: /articles/dont-use-frontmatter-markdown-files/cover.jpg
+ogImage: cover.jpg
 slug: dont-use-frontmatter-markdown-files-gatsby
 tags: [gatsby, tips]
 description: I am going to walk you through how to seperate your markdown files in Gatsby in a way that more sense then a frontmatter field
@@ -46,7 +46,7 @@ I wanted to simplify how my blog generated articles so I could focus on creating
 
 And I already had a folder structure like this:
 
-![](/img/articles/my-folder-structure.png)
+![](my-folder-structure.png)
 
 _Wouldn’t it be nice if GatsbyJS knew if a markdown file was a page or blog post based on the folder it's in?_
 

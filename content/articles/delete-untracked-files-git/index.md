@@ -4,7 +4,7 @@ date: 2019-09-05
 tags: ['git']
 slug: delete-untracked-files-git
 description: If you want to remove untracked files from your repo, git reset wont work
-ogImage: /articles/delete-untracked-files-git/cover.png
+ogImage: cover.png
 published: true
 ---
 
@@ -28,7 +28,7 @@ Untracked files huh? Okay, that doesn't sound too difficult. You should be able 
 
 They are still there! _What gives !?_
 
-![wait what](https://media.giphy.com/media/IMuqnp96sdhyE/giphy.gif)
+![wait what](obama-reaction.gif)
 
 The reason is because `git reset --hard` **only removes files that are already a part of the repo**
 

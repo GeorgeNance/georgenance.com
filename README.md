@@ -2,6 +2,37 @@
 
 This is my personal portfolio.
 
+## Writing articles
+
+Create a post with `npm run article -- "Your Article Title"`. All articles have
+their own folder, with images beside the Markdown:
+
+```text
+content/articles/2026-05-11-shelly/
+  index.md
+  porch.jpeg
+  shelly-2025.jpeg
+```
+
+Use ordinary inline relative links, such as `![On the porch](porch.jpeg)`, so images
+also display in Obsidian's editing preview. Nuxt Content Assets copies the media
+and resolves website URLs during development and static generation; it does not
+rewrite the source files.
+Article image links and social-preview images use filenames relative to the
+article. Previously hotlinked article images are stored locally too. Edit the
+images in the article folder; old copies under `public/` preserve existing URLs.
+
+For Obsidian, open this repository's `content` folder as a vault. The included
+settings use standard Markdown links and save pasted or dropped images beside
+the current note. VS Code's image paste/drop settings do the same for articles.
+Use `npm run dev` to preview the actual site at `http://localhost:3080`.
+
+Media placed in the content folders is published as static assets; keep private
+research outside this vault. Ulysses' ordinary Markdown mode has limitations
+with local images, so this setup is intended for editors that support them.
+
+## Post options
+
 To make an article accessible by URL without listing it publicly, use:
 
 ```yaml
