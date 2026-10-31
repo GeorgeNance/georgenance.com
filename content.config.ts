@@ -15,9 +15,12 @@ export default {
 				date: z.date(),
 				tags: z.array(z.string()),
 				published: z.boolean(),
+				unlisted: z.boolean().default(false),
 				archived: z.boolean().optional(),
 				updated_at: z.date().optional(),
 				hide_toc: z.boolean().optional(),
+				hide_share_prompt: z.boolean().optional(),
+				image_max_height: z.number().positive().optional(),
 			})
 		}),
 		tag: defineCollection({

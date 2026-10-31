@@ -90,7 +90,9 @@ const inputRef = ref(null);
 const listRef = ref(null);
 
 const { data: articles } = await useAsyncData('search-articles', () => {
-  let q = queryCollection('article').order('date', 'DESC');
+  let q = queryCollection('article')
+    .where('unlisted', '=', false)
+    .order('date', 'DESC');
   if (!process.dev) {
     q = q.where('published', '=', true);
   }

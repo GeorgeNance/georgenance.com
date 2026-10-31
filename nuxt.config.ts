@@ -1,4 +1,12 @@
-import tailwindcss from '@tailwindcss/vite';
+import { fileURLToPath } from 'node:url';
+
+const processWarnings = process as typeof process & { noDeprecation?: boolean };
+const previousNoDeprecation = processWarnings.noDeprecation;
+
+// Tailwind's Node integration still calls module.register() under Node 26 while importing.
+processWarnings.noDeprecation = true;
+const { default: tailwindcss } = await import('@tailwindcss/vite');
+processWarnings.noDeprecation = previousNoDeprecation;
 
 export default defineNuxtConfig({
   site: {
@@ -6,6 +14,13 @@ export default defineNuxtConfig({
     name: 'George Nance',
     description: 'George Nance is a software engineer, writer, and creator. He writes about software development, productivity, and personal growth.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
+  },
+
+  hooks: {
+    'content:file:beforeParse'(ctx: { file: { id?: string; body?: string } }) {
+      if (!ctx.file.id?.endsWith('.md') || typeof ctx.file.body !== 'string') return
+      ctx.file.body = ctx.file.body.replace(/((?:\.\.\/)+)public\//g, '/')
+    },
   },
 
   routeRules: {
@@ -42,7 +57,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/fontaine", "@nuxt/image", '@nuxtjs/seo', '@nuxtjs/color-mode', "@nuxt/content", // "@nuxthq/studio",
+  modules: ["@nuxt/icon", "@nuxtjs/google-fonts", "@nuxtjs/fontaine", "@nuxt/image", '@nuxtjs/seo', '@nuxtjs/color-mode', "@nuxt/content","nuxt-component-meta", // "@nuxthq/studio",
     "@vueuse/nuxt", '@vueuse/motion/nuxt', 'nuxt-gtag'],
 
 
@@ -89,7 +104,8 @@ export default defineNuxtConfig({
         //   searchDepth: 3,
         // },
         remarkPlugins: {
-          'remark-reading-time': {}
+          'remark-reading-time': {},
+          [fileURLToPath(new URL('./scripts/remark-em-dash-divider.mjs', import.meta.url))]: {},
         },
 
         highlight: {

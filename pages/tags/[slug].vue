@@ -32,6 +32,7 @@ useSeoMeta({
 
 const { data: articles } = await useAsyncData(`${slug}-articles`, () =>
 	queryCollection("article")
+		.where('unlisted', '=', false)
 		.where('tags', 'LIKE', `%${slug}%`)
 		.order('date', 'DESC')
 		.where('published', '=', true)

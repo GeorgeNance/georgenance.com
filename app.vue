@@ -11,6 +11,15 @@
 </template>
 
 <script setup lang="ts">
+// Unlisted articles have no public links for the static crawler to discover.
+if (import.meta.prerender) {
+  const articles = await queryCollection('article')
+    .where('published', '=', true)
+    .select('slug')
+    .all()
+  prerenderRoutes(articles.map(article => `/articles/${article.slug}`))
+}
+
 useHead({
   titleTemplate: '%s | George Nance',
 })

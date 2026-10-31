@@ -29,6 +29,8 @@
 
         <div class="w-full mt-10">
           <ContentRenderer v-if="post" :value="post"
+                           :class="{ 'capped-images': post.image_max_height }"
+                           :style="post.image_max_height ? { '--article-image-max-height': `${post.image_max_height}px` } : undefined"
                            class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-img:ring-1 prose-img:ring-warm-200 dark:prose-img:ring-white/10 prose-img:rounded-lg prose-headings:scroll-mt-24"
                            ref="articleBody" />
         </div>
@@ -43,7 +45,7 @@
         </aside>
       </div>
     </main>
-    <div class="mt-32 text-center space-y-6">
+    <div v-if="!post.hide_share_prompt" class="mt-32 text-center space-y-6">
       <p class="text-lg text-warm-500 dark:text-warm-400">Thank you for reading! If you got any value from this, please
         share it</p>
       <HomeSocialLinks class="mt-4" />
@@ -81,6 +83,7 @@ if (post.value) {
     articleAuthor: "George Nance",
     articlePublishedTime: post.value.date,
     twitterDescription: post.value.description,
+    robots: post.value.unlisted ? 'noindex, follow' : undefined,
   });
 
   if (post.value.ogImage) {
@@ -107,3 +110,13 @@ const getReadableDate = (dateString) => {
   });
 };
 </script>
+
+<style scoped>
+.capped-images :deep(img) {
+  max-height: var(--article-image-max-height);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  margin-inline: auto;
+}
+</style>

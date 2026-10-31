@@ -20,6 +20,7 @@
 <script lang="ts" setup>
 const { data: articles } = await useAsyncData("featured-articles", () => {
   let query = queryCollection("article")
+    .where('unlisted', '=', false)
     .order('date', 'DESC')
     .limit(3);
 

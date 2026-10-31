@@ -31,6 +31,7 @@ useSeoMeta({
 
 const { data: articles } = await useAsyncData(route.path, () => {
   let query = queryCollection("article")
+    .where('unlisted', '=', false)
     .order('date', 'DESC');
 
   if (!process.dev) {

@@ -25,7 +25,8 @@ useSeoMeta({
 });
 
 const { data: articles } = await useAsyncData("all-articles", () => {
-	let query = queryCollection("article");
+	let query = queryCollection("article")
+		.where('unlisted', '=', false);
 
 	// Only filter by published in production
 	if (!import.meta.dev) {
