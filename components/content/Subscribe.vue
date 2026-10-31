@@ -42,7 +42,7 @@
 
               <!-- Submit Button -->
               <button data-element="submit"
-                      class="formkit-submit cursor-pointer w-full py-3 px-6 rounded-lg font-medium text-warm-50 bg-primary hover:bg-primary-100 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 relative group">
+                      class="formkit-submit cursor-pointer w-full py-3 px-6 rounded-lg font-medium text-warm-950 bg-primary hover:bg-primary-100 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 relative group">
                 <div
                      class="formkit-spinner inline-flex items-center mr-2 opacity-0 transition-opacity duration-300 group-data-[active]:opacity-100">
                   <div class="w-2 h-2 mx-0.5 bg-current rounded-full animate-pulse"></div>

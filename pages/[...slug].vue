@@ -32,9 +32,14 @@
 <script setup lang="ts">
 
 
-const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () => {
-	return queryCollection('page').path(route.path).first()
+// Cloudflare Pages serves these routes with a trailing slash, but the prerendered
+// payload is keyed without one. Normalizing keeps the payload in use so the client
+// never has to fall back to a client-side SQLite query (which pulls in the 400 KiB
+// sqlite3 WASM bundle) just to re-fetch content that is already in the payload.
+const contentKey = useContentRouteKey()
+
+const { data: page } = await useAsyncData(contentKey.value, () => {
+	return queryCollection('page').path(contentKey.value).first()
 })
 
 // Handle 404 if page not found

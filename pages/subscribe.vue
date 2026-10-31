@@ -51,7 +51,7 @@
             </div>
             <button
               data-element="submit"
-              class="formkit-submit cursor-pointer w-full py-3 px-6 rounded-lg font-medium text-warm-50 bg-primary hover:bg-primary-100 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-warm-50 dark:focus:ring-offset-warm-950 text-sm tracking-wide"
+              class="formkit-submit cursor-pointer w-full py-3 px-6 rounded-lg font-medium text-warm-950 bg-primary hover:bg-primary-100 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-warm-50 dark:focus:ring-offset-warm-950 text-sm tracking-wide"
             >
               <div class="formkit-spinner inline-flex items-center mr-2 opacity-0 transition-opacity duration-300 group-data-[active]:opacity-100">
                 <div class="w-1.5 h-1.5 mx-0.5 bg-current rounded-full animate-pulse"></div>

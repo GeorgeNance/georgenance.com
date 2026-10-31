@@ -12,7 +12,11 @@
 
           <!-- Mobile menu button -->
           <button @click="toggleMobileMenu"
-                  class="md:hidden outline-hidden text-warm-500 dark:text-warm-400 hover:text-warm-800 dark:hover:text-warm-100 transition-colors">
+                  type="button"
+                  :aria-label="isMobileMenuOpen ? 'Close menu' : 'Open menu'"
+                  :aria-expanded="isMobileMenuOpen"
+                  aria-controls="mobile-nav"
+                  class="md:hidden outline-hidden p-1 -m-1 text-warm-500 dark:text-warm-400 hover:text-warm-800 dark:hover:text-warm-100 transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path v-if="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" />
               <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
@@ -41,6 +45,7 @@
         leave-from-class="opacity-100 translate-y-0"
         leave-to-class="opacity-0 -translate-y-1">
         <div v-if="isMobileMenuOpen"
+             id="mobile-nav"
              class="md:hidden border-t border-warm-200/80 dark:border-warm-800/40 pb-3">
           <NuxtLink v-for="item in navLinks" :key="item.link" :to="item.link"
                     class="block py-2.5 px-6 text-sm font-medium transition-colors"
@@ -69,7 +74,9 @@ const navLinks = [
   { label: 'Bag', link: '/bag' },
 ];
 
-const isActive = (link) => route.path === link;
+// Links are rendered with trailing slashes, and route.path for a `[...slug]` page keeps
+// the trailing slash Cloudflare Pages serves, so compare the two normalized.
+const isActive = (link) => route.path.replace(/\/+$/, '') === link.replace(/\/+$/, '');
 
 const isMobileMenuOpen = ref(false);
 const toggleMobileMenu = () => {

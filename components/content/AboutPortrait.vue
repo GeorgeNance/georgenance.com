@@ -9,6 +9,7 @@
       width="800"
       height="1000"
       loading="eager"
+      fetchpriority="high"
       decoding="async"
     >
     <figcaption class="px-4 py-3 text-sm text-warm-500 dark:text-warm-400">

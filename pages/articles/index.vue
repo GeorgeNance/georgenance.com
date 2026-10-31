@@ -20,7 +20,6 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-const route = useRoute();
 
 const description =
   "All of my long-form thoughts on programming, user interfaces, product design, and more, collected in chronological order.";
@@ -29,7 +28,9 @@ useSeoMeta({
   description,
 });
 
-const { data: articles } = await useAsyncData(route.path, () => {
+const contentKey = useContentRouteKey()
+
+const { data: articles } = await useAsyncData(contentKey.value, () => {
   let query = queryCollection("article")
     .where('unlisted', '=', false)
     .order('date', 'DESC');

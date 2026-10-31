@@ -14,6 +14,17 @@ export default defineNuxtConfig({
     name: 'George Nance',
     description: 'George Nance is a software engineer, writer, and creator. He writes about software development, productivity, and personal growth.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
+    // Cloudflare Pages 308-redirects /about to /about/, so keep canonical URLs and
+    // internal links in the same shape to avoid a redirect on every entry.
+    trailingSlash: true,
+  },
+
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        trailingSlash: 'append',
+      },
+    },
   },
 
   routeRules: {
