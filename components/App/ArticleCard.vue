@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="`/articles/${article.slug}`"
-            class="group block py-4 -mx-3 px-3 rounded-lg hover:bg-warm-100 dark:hover:bg-warm-800/30 transition-colors">
+            class="group block py-4 -mx-3 px-3 squircle-lg hover:bg-warm-100 dark:hover:bg-warm-800/30 transition-colors">
     <div class="flex items-baseline justify-between gap-4">
       <h3 class="text-base font-medium text-warm-800 dark:text-warm-100 group-hover:text-primary transition-colors">
         {{ article.title }}

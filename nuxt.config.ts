@@ -90,6 +90,12 @@ export default defineNuxtConfig({
     },
   },
 
+  // Inject intrinsic width/height onto content images so galleries can lay out
+  // aspect-correctly on the server without layout shift.
+  contentAssets: {
+    imageSize: 'attrs',
+  },
+
   content: {
     experimental: {
       sqliteConnector: 'native',

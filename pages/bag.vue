@@ -22,9 +22,9 @@
                        :href="item.url || undefined"
                        :target="item.url ? '_blank' : undefined"
                        :rel="item.url ? 'noopener noreferrer' : undefined"
-                       class="group flex items-start gap-4 -mx-3 px-3 py-3.5 rounded-lg hover:bg-warm-100 dark:hover:bg-warm-800/30 transition-colors">
+                       class="group flex items-start gap-4 -mx-3 px-3 py-3.5 squircle-lg hover:bg-warm-100 dark:hover:bg-warm-800/30 transition-colors">
               <!-- Favicon / Icon -->
-              <div class="shrink-0 mt-0.5 w-8 h-8 rounded-md bg-warm-100 dark:bg-warm-800/60 flex items-center justify-center overflow-hidden ring-1 ring-warm-200/80 dark:ring-warm-700/40">
+              <div class="shrink-0 mt-0.5 w-8 h-8 squircle-md bg-warm-100 dark:bg-warm-800/60 flex items-center justify-center overflow-hidden ring-1 ring-warm-200/80 dark:ring-warm-700/40">
                 <img v-if="item.url"
                      :src="getFavicon(item.url)"
                      :alt="item.name"

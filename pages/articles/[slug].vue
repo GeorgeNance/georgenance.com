@@ -3,7 +3,7 @@
     <main class="min-h-screen py-12 sm:py-16 lg:py-20">
       <div class="relative">
         <article class="w-full font-serif">
-          <div v-if="post.published === false" class="bg-yellow-100 text-yellow-800 rounded-lg p-4 mb-6">
+          <div v-if="post.published === false" class="bg-yellow-100 text-yellow-800 squircle-lg p-4 mb-6">
             This article is not published yet.
           </div>
           <header class="animate-fade-up stagger-1">
@@ -31,7 +31,7 @@
           <ContentRenderer v-if="post" :value="post"
                            :class="{ 'capped-images': post.image_max_height }"
                            :style="post.image_max_height ? { '--article-image-max-height': `${post.image_max_height}px` } : undefined"
-                           class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-img:ring-1 prose-img:ring-warm-200 dark:prose-img:ring-white/10 prose-img:rounded-lg prose-headings:scroll-mt-24"
+                           class="article-body prose prose-lg dark:prose-invert prose-blockquote:not-italic prose-img:ring-1 prose-img:ring-warm-200 dark:prose-img:ring-white/10 prose-img:squircle-xl prose-headings:scroll-mt-24"
                            ref="articleBody" />
         </div>
 
@@ -112,7 +112,8 @@ const getReadableDate = (dateString) => {
 </script>
 
 <style scoped>
-.capped-images :deep(img) {
+/* Gallery tiles and their lightbox manage their own sizing. */
+.capped-images :deep(:not(.photo-gallery-item, .photo-gallery-thumbnail) > img) {
   max-height: var(--article-image-max-height);
   width: auto;
   height: auto;

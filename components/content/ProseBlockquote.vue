@@ -1,7 +1,7 @@
 <template>
 	<figure class="not-prose my-10">
 		<blockquote
-					class="relative p-8 bg-warm-100/70 dark:bg-warm-850/50 rounded-lg text-warm-800 dark:text-warm-200 shadow-xs border border-warm-200/50 dark:border-warm-800/30">
+					class="relative p-8 bg-warm-100/70 dark:bg-warm-850/50 squircle-lg text-warm-800 dark:text-warm-200 shadow-xs border border-warm-200/50 dark:border-warm-800/30">
 			<div class="absolute -left-4 top-2 w-10 h-10 text-primary">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 					<path

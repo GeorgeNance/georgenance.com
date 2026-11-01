@@ -12,7 +12,7 @@
 
     <!-- Expanded: full TOC -->
     <div v-else
-         class="bg-warm-100 dark:bg-warm-850 rounded-lg p-5 border border-warm-200 dark:border-warm-800/50 max-w-xs">
+         class="bg-warm-100 dark:bg-warm-850 squircle-lg p-5 border border-warm-200 dark:border-warm-800/50 max-w-xs">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-warm-800 dark:text-warm-100 text-xs tracking-widest font-semibold uppercase">
           Contents

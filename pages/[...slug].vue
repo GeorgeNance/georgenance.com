@@ -21,7 +21,7 @@
 					<!-- Page content -->
 					<div class="max-w-3xl mx-auto w-full">
 						<ContentRenderer :value="page"
-										 class="page-content prose prose-lg dark:prose-invert prose-headings:scroll-mt-24 prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg mx-auto" />
+										 class="page-content prose prose-lg dark:prose-invert prose-headings:scroll-mt-24 prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:squircle-xl mx-auto" />
 					</div>
 				</div>
 			</div>

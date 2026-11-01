@@ -4,6 +4,7 @@
 .nuxt
 .nitro
 .cache
+.taste-skill/
 dist
 
 # Node dependencies

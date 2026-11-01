@@ -2,7 +2,7 @@
   <div class="md:py-12 full-width-container bg-warm-100 dark:bg-warm-900 inset-shadow-sm ">
     <div class="max-w-3xl mx-auto ">
       <div
-           class="rounded-lg overflow-hidden shadow-sm border border-warm-200 dark:border-warm-800 bg-warm-50 dark:bg-warm-900">
+           class="squircle-lg overflow-hidden shadow-sm border border-warm-200 dark:border-warm-800 bg-warm-50 dark:bg-warm-900">
         <div class="p-6 md:p-8">
           <!-- Header -->
           <div class="text-center mb-6">
@@ -27,14 +27,14 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- First Name Field -->
                 <div class="formkit-field">
-                  <input class="w-full px-4 py-3 rounded-lg border focus:ring-2 transition-all duration-200 outline-none bg-warm-50 dark:bg-warm-850 border-warm-200 dark:border-warm-700 text-warm-800 dark:text-warm-100 placeholder-warm-400 dark:placeholder-warm-600 focus:ring-primary/40 focus:border-primary"
+                  <input class="w-full px-4 py-3 squircle-lg border focus:ring-2 transition-all duration-200 outline-none bg-warm-50 dark:bg-warm-850 border-warm-200 dark:border-warm-700 text-warm-800 dark:text-warm-100 placeholder-warm-400 dark:placeholder-warm-600 focus:ring-primary/40 focus:border-primary"
                          aria-label="Your first name" name="fields[first_name]" placeholder="Your first name"
                          type="text">
                 </div>
 
                 <!-- Email Field -->
                 <div class="formkit-field">
-                  <input class="w-full px-4 py-3 rounded-lg border focus:ring-2 transition-all duration-200 outline-none bg-warm-50 dark:bg-warm-850 border-warm-200 dark:border-warm-700 text-warm-800 dark:text-warm-100 placeholder-warm-400 dark:placeholder-warm-600 focus:ring-primary/40 focus:border-primary"
+                  <input class="w-full px-4 py-3 squircle-lg border focus:ring-2 transition-all duration-200 outline-none bg-warm-50 dark:bg-warm-850 border-warm-200 dark:border-warm-700 text-warm-800 dark:text-warm-100 placeholder-warm-400 dark:placeholder-warm-600 focus:ring-primary/40 focus:border-primary"
                          name="email_address" aria-label="Your email address" placeholder="Your email address" required
                          type="email">
                 </div>
@@ -42,7 +42,7 @@
 
               <!-- Submit Button -->
               <button data-element="submit"
-                      class="formkit-submit cursor-pointer w-full py-3 px-6 rounded-lg font-medium text-warm-950 bg-primary hover:bg-primary-100 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 relative group">
+                      class="formkit-submit cursor-pointer w-full py-3 px-6 squircle-lg font-medium text-warm-950 bg-primary hover:bg-primary-100 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 relative group">
                 <div
                      class="formkit-spinner inline-flex items-center mr-2 opacity-0 transition-opacity duration-300 group-data-[active]:opacity-100">
                   <div class="w-2 h-2 mx-0.5 bg-current rounded-full animate-pulse"></div>

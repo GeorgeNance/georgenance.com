@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="not-prose mx-auto my-8 w-full max-w-xs overflow-hidden rounded-3xl border border-warm-200 bg-warm-100/50 shadow-sm dark:border-warm-800 dark:bg-warm-900/50 sm:max-w-sm"
+    class="not-prose mx-auto my-8 w-full max-w-xs overflow-hidden squircle-3xl border border-warm-200 bg-warm-100/50 shadow-sm dark:border-warm-800 dark:bg-warm-900/50 sm:max-w-sm"
   >
     <img
       src="/img/profile.jpg"

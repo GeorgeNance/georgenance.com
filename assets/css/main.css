@@ -1,6 +1,16 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
+/* Keep rounded corners as the fallback; use a wider, smoother curve where supported. */
+@utility squircle-* {
+  border-radius: --value(--radius-*);
+
+  @supports (corner-shape: squircle) {
+    border-radius: calc(--value(--radius-*) * 2);
+    corner-shape: squircle;
+  }
+}
+
 @theme {
   /* Warm gold accent */
   --color-primary: #D4A853;
@@ -56,9 +66,9 @@ body {
 }
 
 .prose :not(pre) > code {
+  @apply squircle-sm;
   background-color: var(--color-warm-100);
   padding: 0.15em 0.4em;
-  border-radius: 0.25rem;
   border: 1px solid var(--color-warm-200);
 }
 

@@ -12,6 +12,7 @@ image_max_height: 600
 
 The thing about death is that it makes old photos mean something new. You notice details you never saw before. 
 
+![](IMG_0070.jpeg)
 Shelly was the mom I never had. Everything I am now, I can trace back to a foundation she gave me. 
 
 When I first met Shelly, I thought she was the coolest mom ever. When she learned I was coming over, she ordered me and my friend pizza. Shelly was my friend's mom, but she was really a mom to all who needed it. I remember the night I met her, she was interested in my living situation at the group home. We talked for a long time, and she wept hearing my story. I barely knew her, yet I already felt at home. I could tell that she was someone who cared.
@@ -35,14 +36,20 @@ Even when I was at my lowest, dealing with grief and on the verge of being place
 
 She taught me that hard work is the only way through. Not the toxic grind you see on Instagram. Not suffering for the sake of it. She meant showing up for what your heart wants and refusing to back down when it gets hard. Shelly taught us to be brave even when we were surrounded by darkness.
 
-You can’t compress an entire human life into a post on Instagram. Sometimes social media blinds us to the real influencers.
+
 
 I write this because her legacy—and the life she lived—deserves to be preserved. She was a light in darkness. If my website can serve one purpose, more than anything, I want future digital historians to know that this woman was amazing and worth remembering.
 
 ---
 
-![Rochelle Freteig Streder 2025](shelly-2025.jpeg)
 
 I don’t think you knew how much that meant to me. I don’t think you knew how much any of it meant to me. I didn’t say it enough. I didn’t say it at all, really. I think I assumed there would be more time. There’s never more time…
 
 <center>Life will never be the same without you. </center>
+
+::gallery
+![](1A431BB3-5CBB-4483-953C-F47F3A9E13D5_1_105_c.jpeg)
+![](85C53F2C-C6EF-4E6F-B745-1CBD15272C23_1_105_c.jpeg)
+![](3BC21D41-316A-4CC7-B01A-B5D842105370_1_105_c.jpeg)
+![Rochelle Freteig Streder 2025](shelly-2025.jpeg "Rochelle Freteig Streder, 2025")
+::

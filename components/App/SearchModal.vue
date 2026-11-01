@@ -21,7 +21,7 @@
           leave-from="opacity-100 scale-100"
           leave-to="opacity-0 scale-95"
         >
-          <DialogPanel class="mx-auto max-w-xl overflow-hidden rounded-xl bg-warm-50 dark:bg-warm-900 shadow-2xl ring-1 ring-warm-200 dark:ring-warm-700/50">
+          <DialogPanel class="mx-auto max-w-xl overflow-hidden squircle-xl bg-warm-50 dark:bg-warm-900 shadow-2xl ring-1 ring-warm-200 dark:ring-warm-700/50">
             <div class="flex items-center gap-3 border-b border-warm-200 dark:border-warm-700/50 px-4">
               <Icon name="lucide:search" class="size-4 shrink-0 text-warm-400 dark:text-warm-500" />
               <input
@@ -34,7 +34,7 @@
                 @keydown.up.prevent="moveSelection(-1)"
                 @keydown.enter.prevent="goToSelected"
               />
-              <kbd class="hidden sm:inline-flex shrink-0 items-center rounded border border-warm-200 dark:border-warm-700 px-1.5 py-0.5 text-[10px] font-medium text-warm-400 dark:text-warm-500">
+              <kbd class="hidden sm:inline-flex shrink-0 items-center squircle-sm border border-warm-200 dark:border-warm-700 px-1.5 py-0.5 text-[10px] font-medium text-warm-400 dark:text-warm-500">
                 ESC
               </kbd>
             </div>

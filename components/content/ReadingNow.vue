@@ -16,7 +16,7 @@
         rel="noopener noreferrer"
         class="group"
       >
-        <div class="aspect-[2/3] rounded overflow-hidden bg-warm-200 dark:bg-warm-800 shadow-sm ring-1 ring-warm-200/60 dark:ring-warm-700/30">
+        <div class="aspect-[2/3] squircle-sm overflow-hidden bg-warm-200 dark:bg-warm-800 shadow-sm ring-1 ring-warm-200/60 dark:ring-warm-700/30">
           <img
             v-if="book.coverUrl"
             :src="book.coverUrl"

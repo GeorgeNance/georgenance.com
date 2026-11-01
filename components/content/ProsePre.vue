@@ -43,7 +43,7 @@ const copyCode = (): void => {
 </script>
 
 <template>
-	<div class="group relative rounded-lg border border-warm-200 dark:border-warm-800 overflow-hidden">
+	<div class="group relative squircle-lg border border-warm-200 dark:border-warm-800 overflow-hidden">
 		<div class="flex items-center justify-between px-4 py-2 border-b border-warm-200 dark:border-warm-800 bg-warm-850 dark:bg-warm-950/60">
 			<span v-if="props.filename" class="font-mono text-xs text-warm-400 truncate">
 				{{ filename }}

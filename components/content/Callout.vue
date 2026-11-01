@@ -1,5 +1,5 @@
 <template>
-	<aside class="my-4 px-4 py-3 rounded-md shadow-xs relative overflow-hidden border border-transparent dark:border-opacity-10"
+	<aside class="my-4 px-4 py-3 squircle-md shadow-xs relative overflow-hidden border border-transparent dark:border-opacity-10"
 		   :class="typeClass.bg">
 		<span class="w-1.5 h-full absolute bottom-0 left-0 top-0" :class="typeClass.side">
 		</span>
