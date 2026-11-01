@@ -14,33 +14,32 @@ The thing about death is that it makes old photos mean something new. You notice
 
 Shelly was the mom I never had. Everything I am now, I can trace back to a foundation she gave me. 
 
-When I first met Shelly, I thought she was the coolest mom ever. When she learned I was coming over, she ordered me and my friend pizza. Shelly was my friend's mom, but she was really a mom to all who needed it. I remember the night I met her, she was intrested in my living situation at the group home. We talked a long time about it all and she wept at what my story was. I barely knew who she was but I felt at home with her. I could tell that this is someone who cares.
+When I first met Shelly, I thought she was the coolest mom ever. When she learned I was coming over, she ordered me and my friend pizza. Shelly was my friend's mom, but she was really a mom to all who needed it. I remember the night I met her, she was interested in my living situation at the group home. We talked for a long time, and she wept hearing my story. I barely knew her, yet I already felt at home. I could tell that she was someone who cared.
 
 ![Rochelle "Shelly" Simpson and me - George, standing on a backporch at night. Shelly is smiling at the camera, George is looking away with a smile.](porch.jpeg)
 
-When I turned 18, I aged out of the group home. The group home would help pay for an apartment for me. But after a few months, I had to start to paying all the bills. At the time I worked at Wendy's making $7.25 an hour. I had no idea how I would ever afford $500 a month. 
+When I turned 18, I aged out of the group home. They helped pay for an apartment for me at first, but after a few months, I had to start paying all the bills myself. At the time, I worked at Wendy's making $7.25 an hour. I had no idea how I would ever afford $500 a month.
 
-I didn't do well with this situation. I was not ready to be on my own. She saw that and didn't want to watch me fall. So she took me in to live with her, alongside her 2 sons, and a girl who also had a difficult childhood.  She tried her hardest to treat us all as her kids. Every lesson one of us got, echo'd to the others. 
+I didn't do well with this situation. I was not ready to be on my own. She saw that and didn't want to watch me fall. So she took me in to live with her, alongside her two sons and a girl who also had a difficult childhood. She tried her hardest to treat us all as her kids. Every lesson one of us got echoed to the others.
 
-![alt text](CAA8E92D-0792-41BC-B2DB-FEEB0857C26F_1_105_c.jpeg)
+![George and Shelly smiling warmly at the camera indoors, wearing winter hats and hugging.](CAA8E92D-0792-41BC-B2DB-FEEB0857C26F_1_105_c.jpeg)
 
->
-> My kid's will not be a statistic
-><cite>Rochelle "Shelly" Simpson</cite>
+> My kids will not be a statistic.
+> <cite>Rochelle "Shelly" Simpson</cite>
 
-She believed we would succeed even when we didn't. 
+She believed we would succeed even when we didn't.
 
-She guided me through the most tranformative years of my life. She deeply believed in us. Even when we were at our worst, she didn't give up. Shelly had a rough life. She was a single mom who put her everything into bettering her kids.
+She guided me through the most transformative years of my life. Shelly had a rough life of her own, yet as a single mom she put her everything into bettering her kids—and even when we were at our worst, she didn't give up.
 
-Even when I was going through my worst, dealing with grief and on the verge of being placed on academic leave in college, Shelly gave me space to figure it out. Because of that, I was able to graduate college and forge my own path and move to Arizona. 
+Even when I was at my lowest, dealing with grief and on the verge of being placed on academic leave in college, Shelly gave me space to figure it out. Because of that, I was able to graduate college, forge my own path, and move to Arizona.
 
-She taught me that hard work is the only way through. Not the toxic grind you see on instagram. Not suffering for the sake of it. She meant showing up for what your heart wants and refusing to back down when it gets hard. Shelly taught us to be brave even when we were surrounded by darkness. 
+She taught me that hard work is the only way through. Not the toxic grind you see on Instagram. Not suffering for the sake of it. She meant showing up for what your heart wants and refusing to back down when it gets hard. Shelly taught us to be brave even when we were surrounded by darkness.
 
-You can’t compress an entire human life into a post on instagram. Sometimes social media blinds us to the real influencers. 
+You can’t compress an entire human life into a post on Instagram. Sometimes social media blinds us to the real influencers.
 
-I write this because her legacy deserves to be preserved. The life she lived. She is a light in darkness. If my website can serve one purpose, more than anything, I want future digital historians to know that this woman was amazing and worth remembering. 
+I write this because her legacy—and the life she lived—deserves to be preserved. She was a light in darkness. If my website can serve one purpose, more than anything, I want future digital historians to know that this woman was amazing and worth remembering.
 
-———
+---
 
 ![Rochelle Freteig Streder 2025](shelly-2025.jpeg)
 
